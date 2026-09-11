@@ -1,0 +1,53 @@
+/* section-adv */
+
+.adv{
+    background-color: #2B2B2B;
+
+    padding: 130px 0;
+}
+
+/* adv-up */
+
+.adv__h2{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 121px;
+    }
+
+/* adv-down */
+
+.adv__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+
+.adv__cards-item{
+    width: 640px;
+    height: 459px;
+    opacity: 0.08;
+
+    position: relative;
+}
+
+.adv__cards-item:nth-child(2){
+    opacity: 1;
+}
+
+.adv__cards-item p{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: #fff;
+
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
