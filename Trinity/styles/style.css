@@ -1,0 +1,96 @@
+/* main__section-cars(2) */
+
+.cars{
+    background-color: #2B2B2B;
+}
+
+/* cars-up-start */
+
+.cars__nav{
+    margin-bottom: 130px 0 55px;
+}
+
+.cars__nav-p{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.cars__nav-p :nth-child(1){
+    color: #f2f2f2;
+}
+
+.cars__nav-a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 325%;
+    text-align: center;
+    color: #414141;
+
+    transition: 0.3s;
+    }
+
+.cars__nav-a:hover{
+    color: white;
+    text-decoration: underline aqua;
+}
+
+/* cars-down-start */
+
+.car__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.car__cards-item{
+    border-radius: 10px 0 0 10px;
+    width: 955px;
+    height: 550px;
+
+    position: relative;
+}
+
+.car__cards-item h2{
+    position: absolute;
+    left: 60px;
+    bottom: 48px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.car__cards-item button{
+    position: absolute;
+
+    right: 60px;
+    bottom: 40px;
+    width: 108px;
+    height: 54px;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: #33B7BC solid;
+    border-radius: 20px;
+    
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 375%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.car__cards-item button:hover{
+    background-color: #2EACB0;
+    
+}
+
+/* main__section-cars(2) */
