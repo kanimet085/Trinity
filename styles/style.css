@@ -1,3 +1,281 @@
+/* MOST-POPULAR */
+.m-popular {
+    background-color: #161516;
+    padding: 90px 0 55px;
+}
+
+.m-popular__content {
+    display: flex;
+    gap: 60px;
+    
+}
+
+.m-popular__car {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 65px 60px;
+
+    width: 1100px;
+    height: 860px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.m-popular__car::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.792) 0%, rgba(0, 0, 0, 0.09) 50%);
+    z-index: 1;
+}
+
+.m-popular__car-title, 
+.m-popular__car-price {
+    position: relative;
+    z-index: 2;
+
+    font-family: var(--font-family);
+    color: #fff;
+}
+
+.m-popular__car-title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+}
+
+.m-popular__car-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+
+}
+
+.car-price__big {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.m-popular__list {
+    width: 700px;
+    height: 850px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.m-popular__h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 129%;
+    color: #fff;
+}
+
+.m-popular__search {
+    border-radius: 10px;
+    width: 700px;
+    height: 90px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 450%;
+    color: #5b5b5b;
+
+    border: 1px solid rgba(255, 255, 255, 0.064);
+    padding: 0 70px 0 30px;
+    margin: 50px 0;
+    background: linear-gradient(90.75deg, #1c1c1c 0.58%, rgba(27, 27, 27, 0.4) 107.03%);
+    outline: none;
+
+    background-image: url(../accets/media/icons/car_search.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) center;
+}
+
+.m-popular__car-selector {
+    position: relative;
+    padding-left: 81px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.rail {
+    position: absolute;
+    border-radius: 20px;
+
+    left: 21px;
+    top: 0px;
+
+    width: 4px;
+    height: 568px;
+
+    background: #2b2b2b;
+}
+
+.rail-button {
+    position: absolute;
+    left: 0px;
+
+    width: 46px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    background: #161516;
+
+    border: 1px solid #212121;
+    border-radius: 50%;
+}
+
+.rail-button--top {
+    top: 0;
+}
+
+.rail-button--bottom {
+    top: 520px;
+}
+
+.arrow {
+    width: 8px;
+    height: 8px;
+
+    border-left: 2px solid #727272;
+    border-top: 2px solid #727272;
+}
+
+.rail-button--top .arrow {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.rail-button--bottom .arrow {
+    transform: rotate(225deg) translate(2px, 2px);
+}
+
+.car {
+    position: absolute;
+}
+
+.car__brand, 
+.car__model {
+    margin: 0;
+}
+
+.car__brand {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #fff;
+}
+
+.car__model {
+    margin-top: 10px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #646464;
+}
+
+.car--audi {
+      left: 176px;
+      top: 41px;
+      opacity: 0.5;
+    }
+
+.car--urus {
+      left: 142px;
+      top: 141px;
+      opacity: 0.8;
+    }
+
+.car--ferrari {
+      left: 142px;
+      top: 349px;
+      opacity: 0.8;
+    }
+
+.car--range {
+      left: 176px;
+      top: 449px;
+      opacity: 0.5;
+    }
+
+.car--active {
+      left: 117px;
+      top: 243px;
+    }
+
+.car--active .car__brand {
+      color: #33b7bc;;
+
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+.car--active .car__model {
+      margin-top: 12px;
+
+      color: #049393;
+
+      font-size: 18px;
+    }
+
+.active-dot {
+    position: absolute;
+
+    left: 16px;
+    top: 245px;
+
+    width: 16px;
+    height: 16px;
+
+    background: #fff;
+
+    border: 3px solid #33b7bc;
+    border-radius: 50%;
+
+    z-index: 4;
+}
+
+.connector-diagonal {
+    position: absolute;
+
+    left: 29px;
+    top: 253px;
+
+    width: 99px;
+    height: 3px;
+
+    background: #2b2b2b;
+
+    transform: rotate(43deg);
+    transform-origin: left center;
+    }
+
+.connector-horizontal {
+    position: absolute;
+
+    left: 100px;
+    top: 320px;
+
+    width: 180px;
+    height: 3px;
+
+    background: #2b2b2b;
+    border-radius: 2px;
+    }
+
+
 /* section-adv */
 
 .adv{
